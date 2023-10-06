@@ -1,0 +1,70 @@
+.mainp {
+  &__order {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  &__button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #f5f4fa;
+    border: none;
+    border-radius: 4px;
+    color: $brand-color-black;
+    padding: 4px 24px;
+    transition: background-color 250ms $brand-standar-animation,
+      box-shadow 250ms $brand-standar-animation;
+    &:hover,
+    &:focus,
+    &:active {
+      background: $brand-color-blue;
+      color: $brand-standar-white;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+      outline: none;
+    }
+  }
+}
+
+.mainp-card {
+  &--hover {
+    transition: box-shadow 250ms $brand-standar-animation;
+
+    &:hover {
+      background: $brand-standar-white;
+      cursor: pointer;
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &:hover .mainp-card__txt {
+      top: 0px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__txt {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: $brand-color-blueb;
+    color: $brand-standar-white;
+    transition: 250ms $brand-standar-animation;
+  }
+
+  &__txt--pdd {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+}

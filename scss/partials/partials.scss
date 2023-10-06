@@ -1,0 +1,108 @@
+body {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: $brand-color-black;
+}
+
+ul {
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  fill: currentColor;
+}
+
+p {
+  font-family: 'Roboto';
+  color: $brand-color-grey;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.4px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.padd_bottom {
+  padding-bottom: 30px;
+}
+
+.padd-shrink {
+  padding: 94px 0px;
+}
+
+.padd-minus {
+  padding-bottom: 0px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eee;
+}
+
+.marg-0 {
+  margin: 0px;
+}
+
+.boder_bottom > li {
+  border-bottom: 2px solid #eee;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-lg40 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.position_relative {
+  position: relative;
+  z-index: -1;
+}
+
+.position_relative > .h3_absolute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  font-style: normal;
+  font-family: 'Roboto';
+  color: $brand-standar-white;
+  background-color: #2f303acc;
+  width: 100%;
+  height: 70px;
+  bottom: 3.5px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+}

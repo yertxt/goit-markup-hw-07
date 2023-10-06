@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
+    <link rel="stylesheet" href="scss/main.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
-    />
+    /> -->
   </head>
   <body>
     <!-- Header -->
-    <header class="border-bottom">
-      <div class="flex_container container">
+    <header class="header border-bottom">
+      <div class="header--position container">
         <div>
-          <nav__item class="flex_around">
+          <nav class="nav flex-lg40">
             <a href="./index.html" class="icon">WebStudio</a>
-            <ul class="flex_around marg-0">
+            <ul class="flex-lg40 marg-0">
               <li class="nav__item">
                 <a href="./index.html" class="nav__link1 current">Estudio</a>
               </li>
@@ -28,15 +29,15 @@
                 <a href="#" class="nav__link1">Contactos</a>
               </li>
             </ul>
-          </nav__item>
+          </nav>
         </div>
 
         <div>
-          <ul class="flex_around marg-0">
-            <li class="center_flex nav--hover">
+          <ul class="flex-lg40 marg-0">
+            <li class="flex-center nav--hover">
               <a
                 href="mailto:info@devstudio.com"
-                class="nav__link2 center_flex"
+                class="nav__link2 flex-center"
               >
                 <svg class="nav__icon1">
                   <use
@@ -46,8 +47,8 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="center_flex nav--hover">
-              <a href="tel:+525555296000" class="nav__link2 center_flex">
+            <li class="flex-center nav--hover">
+              <a href="tel:+525555296000" class="nav__link2 flex-center">
                 <svg class="nav__icon2">
                   <use
                     href="./resources/icons/icons.svg#icon-telfono-inteligente"
@@ -78,8 +79,8 @@
                 <use href="./resources/icons/icons.svg#icon-cerrar"></use>
               </svg>
             </button>
-            <form class="modal__form">
-              <h2 class="marg-0 modal_title">
+            <form class="form modal__form">
+              <h2 class="marg-0 modal__title">
                 Deje sus datos, nos contactaremos con usted
               </h2>
               <div class="form__area">
@@ -91,7 +92,7 @@
                     id="username"
                     name="username"
                   />
-                  <svg class="form-input__icon">
+                  <svg class="form__input-icon">
                     <use
                       href="./resources/icons/icons.svg#icon-persona-modal"
                     ></use>
@@ -108,7 +109,7 @@
                     id="telephone"
                     name="telephone"
                   />
-                  <svg class="form-input__icon">
+                  <svg class="form__input-icon">
                     <use
                       href="./resources/icons/icons.svg#icon-telefono-modal"
                     ></use>
@@ -125,7 +126,7 @@
                     id="e-mail"
                     name="e-mail"
                   />
-                  <svg class="form-input__icon">
+                  <svg class="form__input-icon">
                     <use
                       href="./resources/icons/icons.svg#icon-correo-modal"
                     ></use>
@@ -146,14 +147,14 @@
               <div class="form__area">
                 <label class="check" for="policy"
                   ><input
-                    class="checkbox_input"
+                    class="checkbox__input"
                     type="checkbox"
                     name="policy"
                     id="policy"
                     value="accept"
                   />
                   <span class="checkbox"
-                    ><svg class="form_checkbox__icon">
+                    ><svg class="checkbox__icon">
                       <use
                         href="./resources/icons/icons.svg#icon-icono-checked"
                       ></use>
@@ -167,7 +168,7 @@
                 </label>
               </div>
 
-              <div class="form-button__area">
+              <div class="form-button--area">
                 <label for="button_modal"></label>
                 <button class="form__button" type="submit" id="button_modal">
                   Enviar

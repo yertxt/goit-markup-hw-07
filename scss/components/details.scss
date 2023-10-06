@@ -1,0 +1,21 @@
+.at-details {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+  &__icon--cont {
+    height: 120px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__li--basis {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+}
